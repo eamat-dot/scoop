@@ -1,0 +1,37 @@
+{
+    "homepage": "https://www.centbrowser.com/",
+    "version": "3.5.3.50",
+    "persist": [
+        "User Data"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "http://static.centbrowser.com/installer_32/centbrowser_3.5.3.50_portable.exe",
+            "hash": ""
+        }
+    },
+    "bin": "chrome.exe",
+    "installer": {
+        "args": [
+            "-s",
+            "-d\"$dir\""
+        ]
+    },
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "CentBrowser"
+        ]
+    ],
+    "checkver": {
+        "re": "<p>Version: ([\\d.]+)",
+        "url": "https://www.centbrowser.com/index.html"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://static.centbrowser.com/installer_32/centbrowser_$version_portable.exe"
+            }
+        }
+    }
+}
