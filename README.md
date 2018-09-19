@@ -14,6 +14,12 @@ ps> .\bin\checkver.ps1 <appname> -f
 ps> .\bin\checkver.ps1 <appname> -u
 ```
 
+まとめて
+
+```powershell
+ps> .\bin\checkver.ps1 * -u
+```
+
 -f と -u のコマンドの違いはいまいちよく分からない
 
 ### 参考
