@@ -1,0 +1,37 @@
+{
+    "homepage": "https://github.com/zetamatta/nyagos/blob/master/readme_ja.md",
+    "version": "4.3.3_1",
+    "license": "BSD 3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zetamatta/nyagos/releases/download/4.3.3_1/nyagos-4.3.3_1-amd64.zip",
+            "hash": "a24dc0fd383b0c4a5075860df176549a2d4fb3b744cbdb69abd47d22f16d4770"
+        },
+        "32bit": {
+            "url": "https://github.com/zetamatta/nyagos/releases/download/4.3.3_1/nyagos-4.3.3_1-386.zip",
+            "hash": "9c8123be84d62469146bd7ff4ed7aeb7f8c92e2c4e265552281b5d2a6b36b0b0"
+        }
+    },
+    "bin": "nyagos.exe",
+    "shortcuts": [
+        [
+            "nyagos.exe",
+            "NYAGOS"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/zetamatta/nyagos/blob/master/Doc/release_note_ja.md",
+        "re": "NYAGOS ([\\d._]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zetamatta/nyagos/releases/download/$version/nyagos-$version-amd64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/zetamatta/nyagos/releases/download/$version/nyagos-$version-386.zip"
+            }
+        }
+    },
+    "_comment": "This manifest derives from https://github.com/yutahaga/scoop-bucket/"
+}
