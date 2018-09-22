@@ -1,5 +1,12 @@
 {
+    "##": [
+        "This manifest derives from https://github.com/yutahaga/scoop-bucket/"
+      , "This manifest derives from https://github.com/tetradice/scoop-iyokan-jp"
+      , "autoupdateがうまく機能していなかったので修正 (checkver urlアドレス変更 & hash追加)"
+    ],
+
     "homepage": "https://github.com/zetamatta/nyagos/blob/master/readme_ja.md",
+    "description": "The Nihongo Yet Another GOing Shell",
     "version": "4.3.3_1",
     "license": "BSD 3-Clause",
     "architecture": {
@@ -32,6 +39,5 @@
                 "url": "https://github.com/zetamatta/nyagos/releases/download/$version/nyagos-$version-386.zip"
             }
         }
-    },
-    "_comment": "This manifest derives from https://github.com/yutahaga/scoop-bucket/"
+    }
 }

@@ -1,19 +1,24 @@
 {
-    "homepage": "https://vivaldi.com/",
-    "description": "An innovatively designed web browser, based on Blink, for users in Vivaldi.net community that replaced departed My Opera",
-    "version": "2.0.1307.3",
+    "##": [
+    	"This manifest derives from `extras` "
+      , "SnapShop version"
+    ],
+
+    "homepage": "https://vivaldi.com/blog/snapshots/",
+    "description": "vivaldi snapshots version",
+    "version": "1309.17",
     "license": {
         "identifier": "freeware,BSD",
         "url": "https://vivaldi.com/privacy/vivaldi-end-user-license-agreement/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.0.1307.3.x64.exe#/dl.7z",
-            "hash": "bc8d11da4612e6ecc27965c48b7fa0eba6d52dd4b6243a9004e1e4cdf3f74612"
+            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.0.1309.17.x64.exe#/dl.7z",
+            "hash": "6cf8893cb91822a8465f301dc9866a591874672e81d989b4c34a51f71729eac3"
         },
         "32bit": {
-            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.0.1307.3.exe#/dl.7z",
-            "hash": "40b5ef6261f2d863532cd04d556f21f4280f871ff45973c6871032ec3a369cd3"
+            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.0.1309.17.exe#/dl.7z",
+            "hash": "1e9d70ef66c8eab0f9f5406b418ae3373b089be3c293fa1e1b2b4ef06f2eaa9d"
         }
     },
     "installer": {
@@ -46,10 +51,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.x64.exe#/dl.7z"
+                "##": " RCリンクへの暫定対応",
+                "##": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.x64.exe#/dl.7z",
+                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.0.$version.x64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.exe#/dl.7z"
+                "##": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.exe#/dl.7z",
+                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.0.$version.exe#/dl.7z"
             }
         }
     }

@@ -1,0 +1,69 @@
+{
+    "##": [
+    	"This manifest derives from https://github.com/tetradice/scoop-iyokan-jp"
+      , "scoop配下に設定ファイルを作成し、ポータブル仕様にした"
+    ],
+
+    "homepage": "https://www.haijin-boys.com/wiki/",
+    "description": "Text Editor (portable install)",
+    "version": "2.6.11",
+    "license": "unknown",
+    "architecture": {
+        "64bit": {
+            "url": "http://download.haijin-boys.com/download/Mery-x64-2.6.11.zip",
+            "hash": "8eeab8664b893781dfd1b7fbfaef34ce757c861cb2be153981d802b030a8bc6f"
+        },
+        "32bit": {
+            "url": "http://download.haijin-boys.com/download/Mery-2.6.11.zip",
+            "hash": "4b4112991e30c2acfa0d94604a285902578c880971d18c5513c0e494cd9ce091"
+        }
+    },
+    "extract_dir": "Mery",
+    "bin": "Mery.exe",
+    "pre_install": [
+        "if((Test-Path(\"$env:TEMP\\__scoop__preserved\"))) { Write-Output \"[pre_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force }",
+        "Write-Output \"[pre_install] Creating temporary preserved folder\"; New-Item \"$env:TEMP\\__scoop__preserved\" -type directory | Out-Null",
+        "Write-Output \"[pre_install] Preserving original files\"; Copy-Item \"$dir\\*\" \"$env:TEMP\\__scoop__preserved\" -Recurse -Force",
+        "   #Create PortapleSettings files",
+        "function CreateFile([String] $file, [String] $content = $null) {",
+        "    if(!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host \"Create PortapleSettings for : $file\"",
+        "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
+        "    }",
+        "}",
+        "CreateFile 'Mery.ini'",
+        "CreateFile 'Mery.his'"
+    ],
+    "post_install": [
+        "Write-Output \"[post_install] Overwriting from original files\"; Copy-Item \"$env:TEMP\\__scoop__preserved\\*\" \"$dir\" -Recurse -Force",
+        "Write-Output \"[post_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
+    ],
+    "shortcuts": [
+        [
+            "Mery.exe",
+            "Mery (ベータ版)"
+        ]
+    ],
+
+    "##": "AppData配下に設定ファイルを作らせないようpersistに空ファイルを作成",
+    "persist": [
+        "Mery.ini",
+        "Mery.his",
+        "Plugins"
+    ],
+
+    "checkver": {
+        "url": "https://www.haijin-boys.com/software/mery",
+        "re": "Ver ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://download.haijin-boys.com/download/Mery-x64-$version.zip"
+            },
+            "32bit": {
+                "url": "http://download.haijin-boys.com/download/Mery-$version.zip"
+            }
+        }
+    }
+}
