@@ -2,6 +2,8 @@
     "##": [
     	"This manifest derives from https://github.com/jfut/scoop-jfut"
       , "rename explzh.ja explzh"
+      , "InfDefaultInstallがうまく機能しない？シェル拡張で失敗する"
+      , "アプデ時にアンインストーラが走って設定がクリアされる？"
     ],
 
     "homepage": "https://www.ponsoftware.com/",

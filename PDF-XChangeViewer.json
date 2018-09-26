@@ -1,0 +1,37 @@
+{
+    "##": [
+        "開発は終了しているが時折マイナー更新がある模様"
+    ],
+    "homepage": "https://www.tracker-software.com/product/pdf-xchange-viewer",
+    "description": "The smallest, fastest, most feature-rich PDF reader/viewer available",
+    "version": "2.5.322.9",
+    "url": "http://downloads.pdf-xchange.com/PDFX_Vwr_Port.zip",
+    "hash": "4a55ea5d6de9a8be2044be107dcdc0d35363be1762fa101696c6312520c454d8",
+    "bin": "PDFXCview.exe",
+    "shortcuts": [
+        [
+            "PDFXCview.exe",
+            "PDF-XChangeViewer Portable"
+        ]
+    ],
+    "persist": [
+        "Settings.dat"
+    ],
+    "pre_install": [
+        "   #Create PortapleSettings files",
+        "function CreateFile([String] $file, [String] $content = $null) {",
+        "    if(!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host \"Create PortapleSettings for : $file\"",
+        "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
+        "    }",
+        "}",
+        "CreateFile 'Settings.dat'"
+    ],
+    "checkver": {
+        "url": "https://www.tracker-software.com/product/pdf-xchange-viewer",
+        "re": "<strong>Current version:</strong> ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://downloads.pdf-xchange.com/PDFX_Vwr_Port.zip"
+    }
+}

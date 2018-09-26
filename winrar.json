@@ -1,0 +1,52 @@
+{
+    "##": [
+    	"This manifest derives from extras"
+      , "日本語版の採用 & ライセンスの有効化"
+      , "extras bucketでは winrar-portable となっているが設定内容はレジストリのままなのでportableではない"
+    ],
+
+    "homepage": "https://www.rarlab.com/",
+    "description": "Powerful archive manager. It can backup your data and reduce the size of email attachments, decompress RAR, ZIP and other files downloaded from Internet and create new archives in RAR and ZIP file format.",
+    "version": "5.60",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.rarlab.com/rar/winrar-x64-560jp.exe#/setup.7z",
+            "hash": "aea1c2d9eeae0e6cc4c22f898c216550a3f005d63484eb20311e09cbcd3ad5a6"
+        },
+        "32bit": {
+            "url": "https://www.rarlab.com/rar/wrar560jp.exe#/setup.7z",
+            "hash": "79669e1bd0e8f19db23ccbe63b23982d6ad3b02b55a544dbc2a347a8995ab508"
+        }
+    },
+    "extract_dir": "/",
+    "bin": [
+        "rar.exe",
+        "unrar.exe"
+    ],
+    "shortcuts": [
+        [
+            "WinRAR.exe",
+            "WinRAR"
+        ]
+    ],
+
+    "##": "ライセンスの有効化(事前にpersist/winrar/にrarreg.keyをコピーしておく)",
+    "persist": "rarreg.key",
+
+    "checkver": {
+        "url": "https://www.rarlab.com",
+        "re": "WinRAR and RAR ([\\d.]+) release"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "##":  "https://www.rarlab.com/rar/winrar-x64-$cleanVersion.exe#/setup.7z",
+                "url": "https://www.rarlab.com/rar/winrar-x64-$cleanVersionjp.exe#/setup.7z"
+            },
+            "32bit": {
+                "##":  "https://www.rarlab.com/rar/wrar$cleanVersion.exe#/setup.7z",
+                "url": "https://www.rarlab.com/rar/wrar$cleanVersionjp.exe#/setup.7z"
+            }
+        }
+    }
+}
