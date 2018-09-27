@@ -1,0 +1,26 @@
+{
+    "##": [
+    	"This manifest derives from extras"
+      , "non portable"
+    ],
+
+    "homepage": "https://www.foxitsoftware.com/",
+    "version": "9.2.0.9297",
+    "url": "https://cdn09.foxitsoftware.com/product/reader/desktop/win/9.2/FoxitReader92_enu_Setup.msi",
+    "hash": "7a8880f979baadf3ba78f6c9cd570e70421686073754281fbbdc220f0fed714b",
+    "extract_dir": "Foxit Software\\Foxit Reader",
+    "bin": "FoxitReader.exe",
+    "shortcuts": [
+        [
+            "FoxitReader.exe",
+            "Foxit Reader"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.foxitsoftware.com/downloads/downloadForm.php?retJson=1&product=Foxit-Reader&platform=Windows&language=English",
+        "jp": "$.package_info.version[0]"
+    },
+    "autoupdate": {
+        "url": "https://cdn09.foxitsoftware.com/product/reader/desktop/win/$majorVersion.$minorVersion/FoxitReader$majorVersion$minorVersion_enu_Setup.msi"
+    }
+}

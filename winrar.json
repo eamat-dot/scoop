@@ -1,8 +1,7 @@
 {
     "##": [
     	"This manifest derives from extras"
-      , "日本語版の採用 & ライセンスの有効化"
-      , "extras bucketでは winrar-portable となっているが設定内容はレジストリのままなのでportableではない"
+      , "日本語版の採用 & ライセンスの有効化 & ポータブル仕様"
     ],
 
     "homepage": "https://www.rarlab.com/",
@@ -31,7 +30,20 @@
     ],
 
     "##": "ライセンスの有効化(事前にpersist/winrar/にrarreg.keyをコピーしておく)",
-    "persist": "rarreg.key",
+    "persist": [
+        "rarreg.key",
+        "WinRAR.ini"
+    ],
+    "pre_install": [
+        "   #Create PortapleSettings files",
+        "function CreateFile([String] $file, [String] $content = $null) {",
+        "    if(!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host \"Create PortapleSettings for : $file\"",
+        "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
+        "    }",
+        "}",
+        "CreateFile 'WinRAR.ini'"
+    ],
 
     "checkver": {
         "url": "https://www.rarlab.com",

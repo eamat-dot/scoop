@@ -1,7 +1,7 @@
 {
     "##": [
     	"This manifest derives from https://github.com/jfut/scoop-jfut"
-      , "rename explzh.ja explzh"
+      , "rename explzh.ja explzh-np"
       , "InfDefaultInstallがうまく機能しない？シェル拡張で失敗する"
       , "アプデ時にアンインストーラが走って設定がクリアされる？"
     ],

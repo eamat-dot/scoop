@@ -1,0 +1,45 @@
+{
+    "##": [
+        "This manifest derives from https://github.com/yuanying1199/scoopbucket",
+        "This manifest derives from https://github.com/jayonthenet/scoop",
+        "non portable 設定ファイルの在処は C:\Users\%USERNAME%\AppData\Roaming\Typora"
+    ],
+    "homepage": "https://typora.io",
+    "description": "Typora a minimal markdown editor, markdown reader.",
+    "version": "0.9.9.58",
+    "architecture": {
+        "64bit": {
+            "url": "https://typora.io/windows/typora-setup-x64.exe",
+            "hash": "6a99474ab5a64d29724d1ce4c6aedfe3c88d0cfe50cc4b3aa8c1b35cc3928c07"
+        },
+        "32bit": {
+            "url": "https://typora.io/windows/typora-setup-ia32.exe",
+            "hash": "b91c7fd57ad5ba9594aa4adf16f5927c1c9509e265ee3349b18e2e39089c91a7"
+        }
+    },
+    "innosetup": true,
+    "bin": [
+        "Typora.exe"
+    ],
+    "shortcuts": [
+        [
+            "Typora.exe",
+            "Typora"
+        ]
+    ],
+    "checkver": {
+        "url": "https://typora.io/windows/dev_release.html",
+        "##": "<h4>([\\d.]+) \\(beta\\)</h4>",
+        "re": "(?si)<h4[^>]*>\\s*([\\d.]+)[^<]*</h4[^>]*>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://typora.io/windows/typora-setup-x64.exe"
+            },
+            "32bit": {
+                "url": "https://typora.io/windows/typora-setup-ia32.exe"
+            }
+        }
+    }
+}
