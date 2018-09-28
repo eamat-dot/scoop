@@ -9,10 +9,7 @@
     "hash": "4a55ea5d6de9a8be2044be107dcdc0d35363be1762fa101696c6312520c454d8",
     "bin": "PDFXCview.exe",
     "shortcuts": [
-        [
-            "PDFXCview.exe",
-            "PDF-XChangeViewer Portable"
-        ]
+        [   "PDFXCview.exe", "PDF\\PDF-XChangeViewer Portable" ]
     ],
     "persist": [
         "Settings.dat"

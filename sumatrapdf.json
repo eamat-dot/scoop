@@ -23,10 +23,7 @@
         "re": "var gSumVer = \"([\\d.]+)\";"
     },
     "shortcuts": [
-        [
-            "SumatraPDF.exe",
-            "SumatraPDF"
-        ]
+        [   "SumatraPDF.exe", "PDF\\SumatraPDF" ]
     ],
 
     "persist": [

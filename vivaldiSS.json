@@ -30,17 +30,10 @@
         ]
     },
     "bin": [
-        [
-            "Application\\vivaldi.exe",
-            "VivaldiSS",
-            "VivaldiSS"
-        ]
+        [	"Application\\vivaldi.exe", "VivaldiSS" ]
     ],
     "shortcuts": [
-        [
-            "Application\\vivaldi.exe",
-            "VivaldiSS"
-        ]
+        [	"Application\\vivaldi.exe", "Browser\\VivaldiSS" ]
     ],
     "persist": "User Data",
     "checkver": {

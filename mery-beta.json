@@ -39,10 +39,7 @@
         "Write-Output \"[post_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
     ],
     "shortcuts": [
-        [
-            "Mery.exe",
-            "Mery (ベータ版)"
-        ]
+        [   "Mery.exe", "Editor\\Mery (ベータ版)"  ]
     ],
 
     "##": "AppData配下に設定ファイルを作らせないようpersistに空ファイルを作成",

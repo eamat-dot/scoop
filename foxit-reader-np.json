@@ -1,7 +1,8 @@
 {
     "##": [
         "This manifest derives from extras",
-        "non portable"
+        "non portable",
+        "language folder persist"
     ],
     "homepage": "https://www.foxitsoftware.com/",
     "version": "9.3.0.10826",
@@ -10,12 +11,23 @@
     "extract_dir": "Foxit Software\\Foxit Reader",
     "bin": "FoxitReader.exe",
     "shortcuts": [
-        [
-            "FoxitReader.exe",
-            "Foxit Reader"
-        ]
+        [	"FoxitReader.exe", "PDF\\Foxit Reader" ]
     ],
-    "checkver": {
+     "persist": [
+        "lang"
+    ],
+    "pre_install": [
+        "   #Create folders",
+        "function CreateFolder([String] $folder) {",
+        "    if(!(Test-Path \"$persist_dir\\$folder\")) {",
+        "        Write-Host \"Create folders for : $folder\"",
+        "        New-Item -Force -Path \"$persist_dir\\$folder\" -ItemType Directory | Out-Null",
+        "    }",
+        "}",
+        "CreateFolder 'lang'"
+    ],
+
+   "checkver": {
         "url": "https://www.foxitsoftware.com/downloads/downloadForm.php?retJson=1&product=Foxit-Reader&platform=Windows&language=English",
         "jp": "$.package_info.version[0]"
     },

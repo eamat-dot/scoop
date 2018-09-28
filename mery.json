@@ -21,10 +21,7 @@
     "extract_dir": "Mery",
     "bin": "Mery.exe",
     "shortcuts": [
-        [
-            "Mery.exe",
-            "Mery"
-        ]
+        [	"Mery.exe", "Editor\\Mery" ]
     ],
 
     "##": "AppData配下に設定ファイルを作らせないようpersistに空ファイルを作成",

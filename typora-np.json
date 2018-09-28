@@ -18,14 +18,9 @@
         }
     },
     "innosetup": true,
-    "bin": [
-        "Typora.exe"
-    ],
+    "bin": "Typora.exe",
     "shortcuts": [
-        [
-            "Typora.exe",
-            "Typora"
-        ]
+        [ "Typora.exe", "Editor\\Typora" ]
     ],
     "checkver": {
         "url": "https://typora.io/windows/dev_release.html",

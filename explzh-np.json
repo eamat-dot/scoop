@@ -26,10 +26,7 @@
     },
     "bin": "Explzh.exe",
     "shortcuts": [
-        [
-            "Explzh.exe",
-            "Explzh"
-        ]
+        [   "Explzh.exe", "Archivers\\Explzh" ]
     ],
     "post_install": [
         "",

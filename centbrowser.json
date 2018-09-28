@@ -14,17 +14,10 @@
         ]
     },
     "bin": [
-        [
-            "chrome.exe",
-            "centbrowser",
-            "centbrowser"
-        ]
+        [ 	"chrome.exe", "centbrowser" ]
     ],
     "shortcuts": [
-        [
-            "chrome.exe",
-            "CentBrowser"
-        ]
+        [   "chrome.exe", "Browser\\CentBrowser" ]
     ],
     "checkver": {
         "re": "<p>Version: ([\\d.]+)",
