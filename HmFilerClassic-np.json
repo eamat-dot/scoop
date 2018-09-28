@@ -1,0 +1,41 @@
+{
+    "##": [
+        "non portable 設定の在処は HKCU/Software/Hidemaruo/HmFilerClassic"
+    ],
+    "homepage": "https://hide.maruo.co.jp/software/hmfilerclassic.html",
+    "description": "秀丸ファイラーClassicは、Windows XP/Vista/7/8/8.1/10で動作するファイラーです",
+    "version": "1.40",
+    "architecture": {
+        "64bit": {
+            "url": "https://hide.maruo.co.jp/software/bin/hmfilerclassic140_x64_signed.exe#/dl.7z",
+            "hash": "17ed51b13cd9e4819320edae7d0ef22e003a1a0d8b07acf9975bb504251a5d16"
+        },
+        "32bit": {
+            "url": "https://hide.maruo.co.jp/software/bin/hmfilerclassic140_signed.exe#/dl.7z",
+            "hash": "eb90d700d351bb91b521f998cca91028dbf188398e7b27dac5f2f1223fc53e67"
+        }
+    },
+    "bin": [
+        "HmFilerClassic.exe"
+    ],
+    "shortcuts": [
+        [
+            "HmFilerClassic.exe",
+            "秀丸ファイラーClassic"
+        ]
+    ],
+    "checkver": {
+        "url": "https://hide.maruo.co.jp/software/hmfilerclassichist.html",
+        "re": "[\\d]{4}/[\\d]{2}/[\\d]{2} V([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://hide.maruo.co.jp/software/bin/hmfilerclassic$cleanVersion_x64_signed.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://hide.maruo.co.jp/software/bin/hmfilerclassic$cleanVersion_signed.exe#/dl.7z"
+            }
+        }
+    }
+}

@@ -2,10 +2,10 @@
     "##": [
         "This manifest derives from https://github.com/yuanying1199/scoopbucket",
         "This manifest derives from https://github.com/jayonthenet/scoop",
-        "non portable 設定ファイルの在処は C:\Users\%USERNAME%\AppData\Roaming\Typora"
+        "non portable 設定ファイルの在処は C:/Users/USERNAME/AppData/Roaming/Typora"
     ],
     "homepage": "https://typora.io",
-    "description": "Typora a minimal markdown editor, markdown reader.",
+    "description": "Typora � a minimal markdown editor, markdown reader.",
     "version": "0.9.9.58",
     "architecture": {
         "64bit": {
