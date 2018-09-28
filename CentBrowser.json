@@ -1,0 +1,29 @@
+{
+    "homepage": "https://www.centbrowser.com/",
+    "description": "The Most Feature Rich Chromium",
+    "version": "3.5.3.50",
+    "persist": [
+        "User Data"
+    ],
+    "url": "http://static.centbrowser.com/installer_32/centbrowser_3.5.3.50_portable.exe",
+    "hash": "4bfef9c99c4b64999ab9fad5447e5bd88000c1622f1b3877feb6293a9adbaba8",
+    "installer": {
+        "args": [
+            "-s",
+            "-d\"$dir\""
+        ]
+    },
+    "bin": [
+        [   "chrome.exe", "centbrowser" ]
+    ],
+    "shortcuts": [
+        [   "chrome.exe", "Browser\\CentBrowser" ]
+    ],
+    "checkver": {
+        "re": "<p>Version: ([\\d.]+)",
+        "url": "https://www.centbrowser.com/index.html"
+    },
+    "autoupdate": {
+        "url": "http://static.centbrowser.com/installer_32/centbrowser_$version_portable.exe"
+    }
+}
