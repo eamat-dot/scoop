@@ -1,0 +1,41 @@
+{
+    "##": [
+        "non portable",
+        "設定ファイルの在処は C:/Users/UserName/AppData/Roaming/InnoExtractor",
+        "日本語言語ファイルはautoupdateに対応していないので都度パラメータの修正が必要"
+    ],
+    "homepage": "http://www.havysoft.cl/innoextractor.html",
+    "description": "InnoExtractor is a powerful application that helps you to unpack Inno Setup installers using InnoUnp technology.",
+    "version": "5.3.0.190",
+    "url": [
+    	"http://www.havysoft.cl/download/IE_Install.zip",
+    	"http://tiltstr.up.seesaa.net/lang6/InnoExtractor_v5.3.0.190jp.zip"
+    ],
+    "hash": [
+    	"6590eb22ea37a600f316d97bd8ad52ecc727e4a0682e0666dd60847c74a06da5"
+    ],
+
+    "innosetup": false,
+    "pre_install": [
+        "$manifest.innosetup = $true",
+        "unpack_inno \"IE_Install.exe\" $manifest $dir",
+        "## Japanease Languages Files",
+        "Move-Item \"$dir\\InnoExtractor_v5.3.0.190jp\\Japanese.lng\" \"$dir\\Languages\"",
+        "remove-item \"$dir\\InnoExtractor_v5.3.0.190jp\" -Recurse"
+    ],
+
+    "bin": "InnoExtractor.exe",
+    "shortcuts": [
+        [
+            "InnoExtractor.exe",
+            "Archivers\\InnoExtractor"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.havysoft.cl/descargar.html",
+        "re": "InnoExtractor[\\s\\S]*?<td.*?>([\\d.]+)</td>"
+    },
+    "autoupdate": {
+        "url": "http://www.havysoft.cl/download/IE_Install.zip"
+    }
+}

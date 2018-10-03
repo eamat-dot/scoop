@@ -1,36 +1,96 @@
 {
-    "homepage": "https://www.mp3tag.de/",
-    "version": "2.90",
-    "url": "https://download.mp3tag.de/mp3tagv290setup.exe#dl.7z",
-    "hash": "b1e084b70f5251bdc16f40449bc07454bd82ec25ead7f5f5b2131d7cadea1e98",
-    "license": {
-        "identifier": "Freeware",
-        "url": "http://help.mp3tag.de/misc_license.html"
-    },
-    "bin": "mp3tag.exe",
-    "shortcuts": [
-        [
-            "mp3tag.exe",
-            "Mp3tag"
-        ]
+    "##": [
+        "This manifest derives from extras",
+        ""
     ],
-    "persist": [
-        "data",
-        "export",
-        "mp3tag.cfg"
-    ],
-    "checkver": "Mp3tag v([\\d\\w.]+)",
-    "autoupdate": {
-        "url": "https://download.mp3tag.de/mp3tagv$cleanVersionsetup.exe#dl.7z"
-    },
+
+    "homepage": "https://",
+    "description": " ",
+    "version": "",
+    "url": "https://hoge.zip",
+    "hash": "",
+    "license": "Freeware",
+
+    "extract_dir": "hoge",
+
+    "innosetup": false,
     "pre_install": [
+        "$manifest.innosetup = $true",
+        "unpack_inno \"IE_Install.exe\" $manifest $dir",
+
         "if (!(Test-Path \"$dir\\mp3tag.cfg\")) {",
         "   New-Item -ItemType File \"$dir\\mp3tag.cfg\"",
         "}"
+
+        "function CreateFile([String] $file, [String] $content = $null) {",
+        "    if(!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host \"Create for : $file\"",
+        "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
+        "    }",
+        "}",
+        "CreateFile 'WinRAR.ini'"
+
+        "function CreateFolder([String] $folder) {",
+        "    if(!(Test-Path \"$persist_dir\\$folder\")) {",
+        "        Write-Host \"Create folders for : $folder\"",
+        "        New-Item -Force -Path \"$persist_dir\\$folder\" -ItemType Directory | Out-Null",
+        "    }",
+        "}",
+        "CreateFolder 'lang'"
+
+		"function CreateReg( $RegPath, $RegKey, $RegKeyType, $RegKeyValue, $force=$false){",
+		"	new-item -path $RegPath -force | out-null",
+		"	try {",
+		"		Get-ItemProperty $RegPath -name $RegKey -ErrorAction Stop | Out-Null",
+		"		if($force) {",
+		"			Set-ItemProperty $RegPath -name $RegKey -Value $RegKeyValue | Out-Null",
+		"		}",
+		"	 }",
+		"	catch {",
+		"		New-ItemProperty $RegPath -name $RegKey -PropertyType $RegKeyType -Value $RegKeyValue | Out-Null",
+		"	}",
+		"}",
+		"CreateReg ''
+
+
+
+
     ],
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
         "Remove-Item \"$dir\\`$R0\"",
         "Remove-Item \"$dir\\Mp3tagUninstall.exe.nsis\""
-    ]
+    ],
+
+    "bin": [
+    		"hoge.exe",
+    		"Ailias",
+    		"--arg",
+    ],
+    "shortcuts": [
+        [
+            "hoge.exe",
+            "hoge\\hoge"
+        ]
+    ],
+    "persist": [
+        "data",
+        "export",
+        "hoge.cfg"
+    ],
+    "checkver": "Mp3tag v([\\d\\w.]+)",
+    "checkver": {
+        "url": "https://ipmsg.org/tools/fastcopy.html",
+        "re": "FastCopy ver ([\\d.]+)"
+    },
+
+    "autoupdate": {
+        "url": "https://hoge/hoge$cleanVersionsetup.exe#dl.7z"
+
+        "hash": {
+            "url": "https://www.sordum.org/10084/desktop-ini-editor-v$dashVersion/",
+            "find": "SHA1:\\s+([a-fA-F0-9]{40})"
+        }
+
+    }
 }

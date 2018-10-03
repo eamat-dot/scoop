@@ -20,7 +20,8 @@
     "extract_dir": "/",
     "bin": [
         "rar.exe",
-        "unrar.exe"
+        "unrar.exe",
+        "WinRAR.exe"
     ],
     "shortcuts": [
         [	"WinRAR.exe",  "Archivers\\WinRAR"  ]
@@ -32,10 +33,9 @@
         "WinRAR.ini"
     ],
     "pre_install": [
-        "   #Create PortapleSettings files",
         "function CreateFile([String] $file, [String] $content = $null) {",
         "    if(!(Test-Path \"$persist_dir\\$file\")) {",
-        "        Write-Host \"Create PortapleSettings for : $file\"",
+        "        Write-Host \"Create for : $file\"",
         "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
         "    }",
         "}",
