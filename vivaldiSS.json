@@ -5,19 +5,19 @@
     ],
     "homepage": "https://vivaldi.com/blog/snapshots/",
     "description": "vivaldi snapshots version",
-    "version": "1317.4",
+    "version": "2.1.1322.4",
     "license": {
         "identifier": "freeware,BSD",
         "url": "https://vivaldi.com/privacy/vivaldi-end-user-license-agreement/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.1317.4.x64.exe#/dl.7z",
-            "hash": "da119477c44cd10cf383fd3dd220b342a8da38b58c654ccfa4dea221972d39df"
+            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.1322.4.x64.exe#/dl.7z",
+            "hash": "fa20d8f1c9b95db02282ae08761ef17ce30678021045dde55b3e5d83181ad0f8"
         },
         "32bit": {
-            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.1317.4.exe#/dl.7z",
-            "hash": "fc39d99e6e57b66c4637d771a94508ca2e907d8ccfab7acdd759c7472d8c09c5"
+            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.1322.4.exe#/dl.7z",
+            "hash": "9487f8a77eee5fb5a156fde3d42e03c823b0b896fa88a1da790dee8ea55f9fc8"
         }
     },
     "installer": {
@@ -30,25 +30,30 @@
         ]
     },
     "bin": [
-        [	"Application\\vivaldi.exe", "VivaldiSS" ]
+        [
+            "Application\\vivaldi.exe",
+            "VivaldiSS"
+        ]
     ],
     "shortcuts": [
-        [	"Application\\vivaldi.exe", "Browser\\VivaldiSS" ]
+        [
+            "Application\\vivaldi.exe",
+            "Browser\\VivaldiSS"
+        ]
     ],
     "persist": "User Data",
     "checkver": {
         "url": "https://vivaldi.com/blog/snapshots/",
-        "re": "v_snapshot\\.png.+Snapshot ([\\d.]+)"
+        "re": "v_snapshot\\.png.+Snapshot (?<build>[\\d.]+)",
+        "replace": "2.1.${build}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "##": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.x64.exe#/dl.7z",
-                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.$version.x64.exe#/dl.7z"
+                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.x64.exe#/dl.7z"
             },
             "32bit": {
-                "##": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.exe#/dl.7z",
-                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.$version.exe#/dl.7z"
+                "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.$version.exe#/dl.7z"
             }
         }
     }

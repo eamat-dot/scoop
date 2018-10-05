@@ -11,7 +11,7 @@
     "shortcuts": [
         [
             "lib\\net45\\sourcetree.exe",
-            "git\Atlassian SourceTree"
+            "git\\Atlassian SourceTree"
         ]
     ],
     "checkver": {
