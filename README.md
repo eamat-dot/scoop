@@ -1,3 +1,3 @@
-my scoop-bucket
+# my scoop-bucket
 
-暫定
+個人用超暫定カスタム

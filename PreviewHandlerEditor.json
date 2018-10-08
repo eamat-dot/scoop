@@ -7,7 +7,7 @@
     "shortcuts": [
         [
             "PreviewHandlerEditor.exe",
-            "SystemSetting\\PreviewHandlerEditor"
+            "Win\\PreviewHandlerEditor"
         ]
     ]
 }
