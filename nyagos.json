@@ -6,16 +6,16 @@
     ],
     "homepage": "https://github.com/zetamatta/nyagos/blob/master/readme_ja.md",
     "description": "The Nihongo Yet Another GOing Shell",
-    "version": "4.3.3_2",
+    "version": "4.3.3_3",
     "license": "BSD 3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zetamatta/nyagos/releases/download/4.3.3_2/nyagos-4.3.3_2-amd64.zip",
-            "hash": "e3ecf50149a17bc72142551ad5427f2dfc579851e413d7735bea5d8ad26898f5"
+            "url": "https://github.com/zetamatta/nyagos/releases/download/4.3.3_3/nyagos-4.3.3_3-amd64.zip",
+            "hash": "2902c0d85824fc99ac449f96cae12ce29d5be0e3813917436d4510dbc35514b8"
         },
         "32bit": {
-            "url": "https://github.com/zetamatta/nyagos/releases/download/4.3.3_2/nyagos-4.3.3_2-386.zip",
-            "hash": "7f6df774f716133875f6c68b3c92d1a893495d2dab790574503fefa60d4d2727"
+            "url": "https://github.com/zetamatta/nyagos/releases/download/4.3.3_3/nyagos-4.3.3_3-386.zip",
+            "hash": "2681463d81edc57531028bc5767699ec35763e5cbebcca9d7c11ecd8d5fbf9ed"
         }
     },
     "bin": "nyagos.exe",

@@ -1,21 +1,17 @@
 {
-    "##": [
-    	"This manifest derives from https://github.com/tetradice/scoop-iyokan-jp"
-      , "scoop配下に設定ファイルを作成し、ポータブル仕様にした"
-    ],
-
+    "##": "AppData配下に設定ファイルを作らせないようpersistに空ファイルを作成",
     "homepage": "https://www.haijin-boys.com/wiki/",
     "description": "Text Editor (portable install)",
-    "version": "2.6.11",
+    "version": "2.6.12",
     "license": "unknown",
     "architecture": {
         "64bit": {
-            "url": "http://download.haijin-boys.com/download/Mery-x64-2.6.11.zip",
-            "hash": "8eeab8664b893781dfd1b7fbfaef34ce757c861cb2be153981d802b030a8bc6f"
+            "url": "http://download.haijin-boys.com/download/Mery-x64-2.6.12.zip",
+            "hash": "908f27244711777ad1214673d706774b0a46ecc04343d4ac0d4879e631f755e9"
         },
         "32bit": {
-            "url": "http://download.haijin-boys.com/download/Mery-2.6.11.zip",
-            "hash": "4b4112991e30c2acfa0d94604a285902578c880971d18c5513c0e494cd9ce091"
+            "url": "http://download.haijin-boys.com/download/Mery-2.6.12.zip",
+            "hash": "e3b1dc1b47a1faa73ad9ded72c468f80974fe694edf5b01aabb004527fe0ad26"
         }
     },
     "extract_dir": "Mery",
@@ -39,16 +35,16 @@
         "Write-Output \"[post_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
     ],
     "shortcuts": [
-        [   "Mery.exe", "Editor\\Mery (ベータ版)"  ]
+        [
+            "Mery.exe",
+            "Editor\\Mery (ベータ版)"
+        ]
     ],
-
-    "##": "AppData配下に設定ファイルを作らせないようpersistに空ファイルを作成",
     "persist": [
         "Mery.ini",
         "Mery.his",
         "Plugins"
     ],
-
     "checkver": {
         "url": "https://www.haijin-boys.com/software/mery",
         "re": "Ver ([\\d.]+)"

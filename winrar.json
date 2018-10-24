@@ -1,20 +1,16 @@
 {
-    "##": [
-    	"This manifest derives from extras"
-      , "日本語版の採用 & ライセンスの有効化 & ポータブル仕様"
-    ],
-
+    "##": "ライセンスの有効化(事前にpersist/winrar/にrarreg.keyをコピーしておく)",
     "homepage": "https://www.rarlab.com/",
     "description": "Powerful archive manager. It can backup your data and reduce the size of email attachments, decompress RAR, ZIP and other files downloaded from Internet and create new archives in RAR and ZIP file format.",
-    "version": "5.60",
+    "version": "5.61",
     "architecture": {
         "64bit": {
-            "url": "https://www.rarlab.com/rar/winrar-x64-560jp.exe#/setup.7z",
-            "hash": "aea1c2d9eeae0e6cc4c22f898c216550a3f005d63484eb20311e09cbcd3ad5a6"
+            "url": "https://www.rarlab.com/rar/winrar-x64-561jp.exe#/setup.7z",
+            "hash": "4bd8b11753f0a72612d6dc46ac8fd0424171d9e2341c064c6b495829c9d95cb6"
         },
         "32bit": {
-            "url": "https://www.rarlab.com/rar/wrar560jp.exe#/setup.7z",
-            "hash": "79669e1bd0e8f19db23ccbe63b23982d6ad3b02b55a544dbc2a347a8995ab508"
+            "url": "https://www.rarlab.com/rar/wrar561jp.exe#/setup.7z",
+            "hash": "ab607fe8f3e232c5b4991c6483a6a25c3636f57c150d05fbc9bd0da025c40795"
         }
     },
     "extract_dir": "/",
@@ -24,10 +20,11 @@
         "WinRAR.exe"
     ],
     "shortcuts": [
-        [	"WinRAR.exe",  "Archivers\\WinRAR"  ]
+        [
+            "WinRAR.exe",
+            "Archivers\\WinRAR"
+        ]
     ],
-
-    "##": "ライセンスの有効化(事前にpersist/winrar/にrarreg.keyをコピーしておく)",
     "persist": [
         "rarreg.key",
         "WinRAR.ini"
@@ -41,7 +38,6 @@
         "}",
         "CreateFile 'WinRAR.ini'"
     ],
-
     "checkver": {
         "url": "https://www.rarlab.com",
         "re": "WinRAR and RAR ([\\d.]+) release"
@@ -49,11 +45,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "##":  "https://www.rarlab.com/rar/winrar-x64-$cleanVersion.exe#/setup.7z",
+                "##": "https://www.rarlab.com/rar/winrar-x64-$cleanVersion.exe#/setup.7z",
                 "url": "https://www.rarlab.com/rar/winrar-x64-$cleanVersionjp.exe#/setup.7z"
             },
             "32bit": {
-                "##":  "https://www.rarlab.com/rar/wrar$cleanVersion.exe#/setup.7z",
+                "##": "https://www.rarlab.com/rar/wrar$cleanVersion.exe#/setup.7z",
                 "url": "https://www.rarlab.com/rar/wrar$cleanVersionjp.exe#/setup.7z"
             }
         }
