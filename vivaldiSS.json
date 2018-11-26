@@ -5,19 +5,19 @@
     ],
     "homepage": "https://vivaldi.com/blog/snapshots/",
     "description": "vivaldi snapshots version",
-    "version": "2.1.1337.35",
+    "version": "2.2.1373.4",
     "license": {
         "identifier": "freeware,BSD",
         "url": "https://vivaldi.com/privacy/vivaldi-end-user-license-agreement/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.1337.35.x64.exe#/dl.7z",
-            "hash": "718949f7d8fcd10624a516bf02aaa8442fa88ca13b74c949afbbd7919f2f1910"
+            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.2.1373.4.x64.exe#/dl.7z",
+            "hash": "b9523b38e09f8ca7b9e70b60dcd3b6f904c78124e0d09292e39e66ebd3c4fefa"
         },
         "32bit": {
-            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.1.1337.35.exe#/dl.7z",
-            "hash": "8899771965e85f20854aed05dfa3226bda290a082bfab4a9418e7c8a7cc36790"
+            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.2.2.1373.4.exe#/dl.7z",
+            "hash": "9fc9822bee07bda026079e0bf8e764b6ad7d7bc09b420b99b623ac38ddf189b6"
         }
     },
     "installer": {
@@ -44,8 +44,8 @@
     "persist": "User Data",
     "checkver": {
         "url": "https://vivaldi.com/blog/snapshots/",
-        "re": "v_snapshot\\.png.+Snapshot (?<ver>[\\d.]+).+?(?<build>[\\d.]{2,})",
-        "replace": "${ver}.${build}"
+        "re": "v_snapshot\\.png.+Snapshot (?<build>[\\d.]+)",
+        "replace": "2.2.${build}"
     },
     "autoupdate": {
         "architecture": {

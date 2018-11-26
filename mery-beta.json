@@ -2,16 +2,16 @@
     "##": "AppData配下に設定ファイルを作らせないようpersistに空ファイルを作成",
     "homepage": "https://www.haijin-boys.com/wiki/",
     "description": "Text Editor (portable install)",
-    "version": "2.6.12",
+    "version": "2.6.13",
     "license": "unknown",
     "architecture": {
         "64bit": {
-            "url": "http://download.haijin-boys.com/download/Mery-x64-2.6.12.zip",
-            "hash": "908f27244711777ad1214673d706774b0a46ecc04343d4ac0d4879e631f755e9"
+            "url": "http://download.haijin-boys.com/download/Mery-x64-2.6.13.zip",
+            "hash": "5ba98656ac81a077072d9457abb64e6e467331643ec5b4b5ad29a9a8da0af0bb"
         },
         "32bit": {
-            "url": "http://download.haijin-boys.com/download/Mery-2.6.12.zip",
-            "hash": "e3b1dc1b47a1faa73ad9ded72c468f80974fe694edf5b01aabb004527fe0ad26"
+            "url": "http://download.haijin-boys.com/download/Mery-2.6.13.zip",
+            "hash": "25b2f4d9f9b7e66d01d738ed42b7207468deb75a1685af18407e4b2f4f5c5fbf"
         }
     },
     "extract_dir": "Mery",
