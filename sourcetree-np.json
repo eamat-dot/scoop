@@ -4,9 +4,9 @@
         "rename -np"
     ],
     "homepage": "https://www.sourcetreeapp.com/",
-    "version": "3.0.9",
-    "url": "https://www.sourcetreeapp.com/update/windows/ga/SourceTree-3.0.9-full.nupkg#/dl.7z",
-    "hash": "sha1:9a27401327a73486d6df74b2dcdf80bb477e5371",
+    "version": "3.0.17",
+    "url": "https://www.sourcetreeapp.com/update/windows/ga/SourceTree-3.0.17-full.nupkg#/dl.7z",
+    "hash": "sha1:56d642548d18de2edfe5574f0f6b23291fba3f3a",
     "bin": "lib\\net45\\sourcetree.exe",
     "shortcuts": [
         [

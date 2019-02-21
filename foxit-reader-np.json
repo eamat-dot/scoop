@@ -5,9 +5,9 @@
         "language folder persist"
     ],
     "homepage": "https://www.foxitsoftware.com/",
-    "version": "9.3.0.10826",
-    "url": "https://cdn09.foxitsoftware.com/product/reader/desktop/win/9.3/FoxitReader93_enu_Setup_Prom.exe",
-    "hash": "ab9ce6d8d3506dda44a1e85d600d931924650f4685b6c2f06b657dfb529f0593",
+    "version": "9.4.1.16828",
+    "url": "https://cdn09.foxitsoftware.com/product/reader/desktop/win/9.4/FoxitReader94_enu_Setup_Prom.exe",
+    "hash": "9f9d3bab61ac5981ea67ccd768ee63c061205807715ac4da41dab682d9512637",
     "innosetup": true,
     "bin": "FoxitReader.exe",
     "shortcuts": [
@@ -16,9 +16,7 @@
             "PDF\\Foxit Reader"
         ]
     ],
-    "persist": [
-        "lang"
-    ],
+    "persist": "lang",
     "pre_install": [
         "function CreateFolder([String] $folder) {",
         "    if(!(Test-Path \"$persist_dir\\$folder\")) {",

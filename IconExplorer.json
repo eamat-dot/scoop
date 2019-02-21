@@ -2,14 +2,14 @@
     "homepage": "http://mitec.cz/",
     "description": "This tool allows to manage icon libraries, standalone icons and executable that contains icons as resources.",
     "license": "Free to use for private, educational and non-commercial purposes.",
-    "version": "5.0.5",
+    "version": "5.1.0",
     "url": "http://mitec.cz/Downloads/IconExplorer.zip",
-    "hash": "1025f31bec6e9030aa6abcf8aa429839616932dd542a0ab0e6b0ebeb95951279",
+    "hash": "b050df14b93c56cc9cc8f74541a0aa68e973bf4ddf6da85b89a9d9d25e671684",
     "bin": "IconExplorer.exe",
     "shortcuts": [
-    	[
-        	"IconExplorer.exe",
-        	"Win\\MiTeC Icon Explorer"
+        [
+            "IconExplorer.exe",
+            "Win\\MiTeC Icon Explorer"
         ]
     ],
     "checkver": {

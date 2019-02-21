@@ -1,12 +1,10 @@
 {
     "homepage": "https://www.centbrowser.com/",
     "description": "The Most Feature Rich Chromium",
-    "version": "3.7.2.33",
-    "persist": [
-        "User Data"
-    ],
-    "url": "http://static.centbrowser.com/installer_32/centbrowser_3.7.2.33_portable.exe",
-    "hash": "7c1310149d88d7414c91a6cb3690e84feda22e4ce74f4ffa2764a03755dbb5a8",
+    "version": "3.8.5.69",
+    "persist": "User Data",
+    "url": "http://static.centbrowser.com/installer_32/centbrowser_3.8.5.69_portable.exe",
+    "hash": "b74d006f87af86c0b8f2515d2705e12c6114e719b8e247dc139b68aa35253714",
     "installer": {
         "args": [
             "-s",
