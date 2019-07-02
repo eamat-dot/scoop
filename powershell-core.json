@@ -1,0 +1,36 @@
+{
+    "homepage": "https://github.com/PowerShell/PowerShell",
+    "version": "6.2.1",
+    "description": "PowerShell is a task-based command-line shell and scripting language built on .NET. PowerShell helps system administrators and power-users rapidly automate tasks that manage operating systems (Linux, macOS, and Windows) and processes.",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v6.2.1/PowerShell-6.2.1-win-x64.zip",
+            "hash": "6bcc0f80ca549a8adb317b2ec1294f103c4bf75cc29efa8ac03a27f9a860b1f4"
+        },
+        "32bit": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v6.2.1/PowerShell-6.2.1-win-x86.zip",
+            "hash": "f8a713a2614603267683f463b75ce9a81756107f0c927f198bbdd747acb10ac0"
+        }
+    },
+    "env_add_path": "",
+    "notes": "exe file is pwsh.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "note": "Thanks for using autoupdate, please test your updates!",
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-win-x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-win-x86.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/latest",
+            "find": "(?:$basename)[\\s\\S]{1,64}([a-fA-F0-9]{64})"
+        }
+    }
+}
