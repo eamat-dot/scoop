@@ -2,15 +2,15 @@
     "##": "ライセンスの有効化(事前にpersist/winrar/にrarreg.keyをコピーしておく)",
     "homepage": "https://www.rarlab.com/",
     "description": "Powerful archive manager. It can backup your data and reduce the size of email attachments, decompress RAR, ZIP and other files downloaded from Internet and create new archives in RAR and ZIP file format.",
-    "version": "5.70",
+    "version": "5.71",
     "architecture": {
         "64bit": {
-            "url": "https://www.rarlab.com/rar/winrar-x64-570jp.exe#/setup.7z",
-            "hash": "dd486ae4b38e684b7bfca7790675206bc582fe8e0d2058ad081480d814ec93eb"
+            "url": "https://www.rarlab.com/rar/winrar-x64-571jp.exe#/setup.7z",
+            "hash": "082d0eedd989c0e467f2a0d980157be9ce460876d35be5917a56d3552207e880"
         },
         "32bit": {
-            "url": "https://www.rarlab.com/rar/wrar570jp.exe#/setup.7z",
-            "hash": "ef3066ea25e4c194b67be8d9b967128481ae54547d2d61ed395b9d34699effe5"
+            "url": "https://www.rarlab.com/rar/wrar571jp.exe#/setup.7z",
+            "hash": "87869bade810914be05a6bb11420aa441bab42896051e6a16cc191c3be6f3d57"
         }
     },
     "extract_dir": "/",
