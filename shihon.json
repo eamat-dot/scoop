@@ -2,9 +2,9 @@
     "##": "",
     "homepage": "http://ekakin.la.coocan.jp/cgi-bin/plugin/slink.cgi",
     "description": "個人用蔵書管理ソフト",
-    "version": "7.0.0",
-    "url": "http://ekakin.la.coocan.jp/download/shihonpv700.zip",
-    "hash": "57858a1fcf92236965dcf9b3ce9f02436e056da77bae1689ebd5d2d2183acef3",
+    "version": "8.0.0",
+    "url": "http://ekakin.la.coocan.jp/download/shihonpv800.zip",
+    "hash": "7b9a69a07b9a0ecdf3ecb9237b8c9f67593f2d5cdf67daad5db25d3a1466d3aa",
     "license": "Freeware",
     "pre_install": [
         "function CreateFile([String] $file, [String] $content = $null) {",
