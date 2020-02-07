@@ -5,10 +5,10 @@
     ],
     "homepage": "https://ipmsg.org/tools/fastcopy.html",
     "description": "The Fastest Copy/Delete Software on Windows",
-    "version": "3.85",
+    "version": "3.86",
     "license": "GPL3",
-    "url": "https://fastcopy.jp/archive/FastCopy385_installer.exe#/FastCopy_installer.exe",
-    "hash": "8dcf524d1a939730a687acd8a330ef35eeba91cdbc3638b0b662bf86be3ef349",
+    "url": "https://fastcopy.jp/archive/FastCopy386_installer.exe#/FastCopy_installer.exe",
+    "hash": "3e0e00587eb54152c6b1e06bd6a5ceae859c0c078f8c02f806d87a89224d2fd7",
     "bin": "FastCopy.exe",
     "installer": {
         "file": "FastCopy_installer.exe",
