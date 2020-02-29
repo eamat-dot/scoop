@@ -2,11 +2,11 @@
     "homepage": "https://www.virtualbox.org/",
     "description": "Powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.",
     "license": "GPL-2.0-only",
-    "version": "6.0.16",
+    "version": "6.0.18",
     "architecture": {
         "64bit": {
-            "url": "https://download.virtualbox.org/virtualbox/6.0.16/VirtualBox-6.0.16-135674-Win.exe#/VBoxSetup.exe",
-            "hash": "f80063d935841dd59af8c71817884fa1ae1b1577fc4bfe78ae088ded82546504"
+            "url": "https://download.virtualbox.org/virtualbox/6.0.18/VirtualBox-6.0.18-136238-Win.exe#/VBoxSetup.exe",
+            "hash": "3d4f5b70fe981cebaf929b713e0b3a5a4b09a74dfb65bdd2181d731482bbc531"
         }
     },
     "installer": {
