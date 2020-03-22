@@ -1,0 +1,48 @@
+{
+    "##": [
+    	"This manifest derives from https://github.com/tetradice/scoop-iyokan-jp"
+      , "https://github.com/sh4869221b/scoop-bucket"
+    ],
+    "version": "20.3.16",
+    "license": "MIT",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.3.16/te200316.zip",
+    "homepage": "https://tablacus.github.io/explorer.html",
+    "hash": "1c350eabc85fb3892901dc9149d6fddb6dd62d3ab3562f1920057ada4dcc7f38",
+    "architecture": {
+        "64bit": {
+            "bin": [["TE64.exe", "te"], ["TE64.exe", "tablacus"]],
+            "shortcuts": [
+                [
+                    "TE64.exe",
+                    "Tablacus Explorer"
+                ]
+            ]
+        },
+         "32bit": {
+            "bin": [["TE32.exe", "te"], ["TE32.exe", "tablacus"]],
+            "shortcuts": [
+                [
+                    "TE32.exe",
+                    "Tablacus Explorer"
+                ]
+            ]
+        }
+    },
+    "pre_install": [
+        "if((Test-Path(\"$env:TEMP\\__scoop__preserved\"))) { Write-Output \"[pre_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force }",
+        "Write-Output \"[pre_install] Creating temporary preserved folder\"; New-Item \"$env:TEMP\\__scoop__preserved\" -type directory | Out-Null",
+        "Write-Output \"[pre_install] Preserving original files\"; Copy-Item \"$dir\\*\" \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
+    ],
+    "persist": ["config", "addons"],
+    "post_install": [
+        "Write-Output \"[post_install] Overwriting from original files\"; Copy-Item \"$env:TEMP\\__scoop__preserved\\*\" \"$dir\" -Recurse -Force",
+        "Write-Output \"[post_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
+    ],
+    "checkver": {
+        "url": "https://github.com/tablacus/TablacusExplorer/releases",
+        "re": "/(?<version>[\\d.]+)/te(?<file>[\\d]+).zip"
+    },
+    "autoupdate": {
+        "url": "https://github.com/tablacus/TablacusExplorer/releases/download/$version/te$matchFile.zip"
+    }
+}
