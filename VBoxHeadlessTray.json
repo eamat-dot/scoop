@@ -6,12 +6,12 @@
     ],
     "homepage": "https://www.toptensoftware.com/vboxheadlesstray/",
     "description": "VBoxHeadlessTray is simple Windows app that runs a VirtualBox VM as a tray icon",
-    "version": "6.0.4",
+    "version": "6.1.0",
     "innosetup": false,
     "architecture": {
         "64bit": {
-            "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray604Setup.exe",
-            "hash": "8ed657379e2edd08af0908baff3fda6457b3b17016f75599919d6b048ebb2e49",
+            "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray610Setup.exe",
+            "hash": "15e51022824e57ae2109b761f6e4fed6e7e66feb86dd03d76a4959f396c6fd24",
             "pre_install": [
                 "$manifest.innosetup = $true",
                 "unpack_inno \"VBoxHeadlessTray52Setup.exe\" $manifest $dir",
@@ -20,8 +20,8 @@
             ]
         },
         "32bit": {
-            "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray604Setup.exe",
-            "hash": "8ed657379e2edd08af0908baff3fda6457b3b17016f75599919d6b048ebb2e49",
+            "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray610Setup.exe",
+            "hash": "15e51022824e57ae2109b761f6e4fed6e7e66feb86dd03d76a4959f396c6fd24",
             "pre_install": [
                 "$manifest.innosetup = $true",
                 "unpack_inno \"VBoxHeadlessTray52Setup.exe\" $manifest $dir",

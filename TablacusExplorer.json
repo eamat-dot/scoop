@@ -3,16 +3,16 @@
         "This manifest derives from https://github.com/tetradice/scoop-iyokan-jp",
         "https://github.com/sh4869221b/scoop-bucket"
     ],
-    "version": "20.4.6",
+    "version": "20.4.12",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.4.6/te200406.zip",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.4.12/te200412.zip",
     "homepage": "https://tablacus.github.io/explorer.html",
-    "hash": "875af2f4b1c1616d5bbe04de4243c11089fad64c55da0b10daeb486069cc676a",
+    "hash": "ff95fbb1d70e6f6e6ab081aeb1296e9062424e6128096129a131612a4d1119eb",
     "architecture": {
         "64bit": {
             "bin": [
-                    "TE64.exe",
-                    "TE32.exe",
+                "TE64.exe",
+                "TE32.exe",
                 [
                     "TE64.exe",
                     "tablacus"
@@ -31,7 +31,7 @@
         },
         "32bit": {
             "bin": [
-                    "TE32.exe",
+                "TE32.exe",
                 [
                     "TE32.exe",
                     "tablacus"

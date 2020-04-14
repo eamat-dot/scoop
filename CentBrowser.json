@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.centbrowser.com/",
     "description": "The Most Feature Rich Chromium",
-    "version": "4.1.7.182",
+    "version": "4.2.9.152",
     "persist": "User Data",
-    "url": "http://static.centbrowser.com/installer_32/centbrowser_4.1.7.182_portable.exe",
-    "hash": "a5cf9c3f25340a4f1ce1d644228a6704ff29f96a7043d32c77d334684afca69a",
+    "url": "http://static.centbrowser.com/installer_32/centbrowser_4.2.9.152_portable.exe",
+    "hash": "94481f88ebad5d4d7bab934aaebe4467c56e83cc469b2433df4a57a63c7aa399",
     "installer": {
         "args": [
             "-s",
