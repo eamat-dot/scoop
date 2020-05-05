@@ -28,7 +28,7 @@
     ],
     "checkver": {
         "url": "https://www.foxitsoftware.com/downloads/downloadForm.php?retJson=1&product=Foxit-Reader&platform=Windows&language=English",
-        "jp": "$.package_info.version[0]"
+        "regex": "([\\d.]+).*(?<md5hash>([a-fA-F0-9]{32}))"
     },
     "autoupdate": {
         "url": "https://cdn09.foxitsoftware.com/product/reader/desktop/win/$majorVersion.$minorVersion/FoxitReader$majorVersion$minorVersion_enu_Setup.msi"

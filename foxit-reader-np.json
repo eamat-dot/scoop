@@ -5,9 +5,9 @@
         "language folder persist"
     ],
     "homepage": "https://www.foxitsoftware.com/",
-    "version": "9.5.0.20723",
-    "url": "https://cdn09.foxitsoftware.com/product/reader/desktop/win/9.5/FoxitReader95_enu_Setup_Prom.exe",
-    "hash": "d270479ac73e0c65ee85c56760f4c86afd45aa266e63e5a65927290b01493650",
+    "version": "9.7.2.29539",
+    "url": "https://cdn01.foxitsoftware.com/product/reader/desktop/win/9.7.2/339E24316E3F0007FFA28C4FBBE3B3C1/FoxitReader972_enu_Setup_Prom.exe",
+    "hash": "md5:339e24316e3f0007ffa28c4fbbe3b3c1",
     "innosetup": true,
     "bin": "FoxitReader.exe",
     "shortcuts": [
@@ -28,9 +28,13 @@
     ],
     "checkver": {
         "url": "https://www.foxitsoftware.com/downloads/downloadForm.php?retJson=1&product=Foxit-Reader&platform=Windows&language=English",
-        "jp": "$.package_info.version[0]"
+        "regex": "([\\d.]+).*(?<md5hash>([a-fA-F0-9]{32}))"
     },
     "autoupdate": {
-        "url": "https://cdn09.foxitsoftware.com/product/reader/desktop/win/$majorVersion.$minorVersion/FoxitReader$majorVersion$minorVersion_enu_Setup_Prom.exe"
+        "url": "https://cdn01.foxitsoftware.com/product/reader/desktop/win/$majorVersion.$minorVersion.$patchVersion/$matchMd5hash/FoxitReader$majorVersion$minorVersion$patchVersion_enu_Setup_Prom.exe",
+        "hash": {
+            "url": "https://www.foxitsoftware.com/downloads/downloadForm.php?retJson=1&product=Foxit-Reader&platform=Windows&language=English",
+            "regex": "$md5"
+        }
     }
 }
