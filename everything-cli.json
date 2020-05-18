@@ -1,7 +1,13 @@
 {
+    "##": [
+        "This manifest derives from https:/Modefai/github.com/wangzq/scoop-bucket",
+        "Add : `checkver` `autoupdate`",
+        "changed : `depends` to `suggest`"
+    ],
     "homepage": "https://www.voidtools.com",
     "license": "MIT",
-    "depends": "everything",
+    "description": "Everything Command-line Interface",
+    "suggest": [ "everything","everything-np" ],
     "version": "1.1.0.18",
     "url": "https://www.voidtools.com/ES-1.1.0.18.zip",
     "hash": "9412f3b083a539a8de02301dc5f60a0033b3edadf12668136223baca66beb7b3",
