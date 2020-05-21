@@ -2,14 +2,13 @@
     "##": [
         "This manifest derives from https://github.com/tetradice/scoop-iyokan-jp",
         "https://github.com/sh4869221b/scoop-bucket",
-        64bitではx86とx64両方ショートカットを作るように変更(susie pluginの関係で32bitを利用する場合もあるため)
-        ""
+        "64bitではx86とx64両方ショートカットを作るように変更(susie pluginの関係で32bitを利用する場合もあるため)"
     ],
-    "version": "20.5.6",
+    "version": "20.5.20",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.5.6/te200506.zip",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.5.20/te200520.zip",
     "homepage": "https://tablacus.github.io/explorer.html",
-    "hash": "bffb3b6b422fa68912ebb625259b39f3d9979a0d221d8a0f31b8919823d2d59a",
+    "hash": "6d82b520bb84c69091f8747743f6b61d1ee7ff8ec22ecaa4f409c4960b73b513",
     "architecture": {
         "64bit": {
             "bin": [
