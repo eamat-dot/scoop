@@ -4,11 +4,11 @@
         "https://github.com/sh4869221b/scoop-bucket",
         "64bitではx86とx64両方ショートカットを作るように変更(susie pluginの関係で32bitを利用する場合もあるため)"
     ],
-    "version": "20.6.6",
+    "version": "20.6.22",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.6.6/te200606.zip",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.6.22/te200622.zip",
     "homepage": "https://tablacus.github.io/explorer.html",
-    "hash": "04c733461be667d04ffe7e6787a81efdc9cec84529b8f434fc4e62bd28032216",
+    "hash": "6d411f7695e35991ee3d893e7b33e1223578954a519e85dc1ccd66a1c1dcb3ae",
     "architecture": {
         "64bit": {
             "bin": [
