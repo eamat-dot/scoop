@@ -2,13 +2,14 @@
     "##": [
         "This manifest derives from https://github.com/tetradice/scoop-iyokan-jp",
         "https://github.com/sh4869221b/scoop-bucket",
-        "64bitではx86とx64両方ショートカットを作るように変更(susie pluginの関係で32bitを利用する場合もあるため)"
+        "64bitではx86とx64両方ショートカットを作るように変更(susie pluginの関係で32bitを利用する場合もあるため)",
+        "Change the method of updating the addons"
     ],
-    "version": "20.6.22",
+    "version": "20.6.24",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.6.22/te200622.zip",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.6.24/te200624.zip",
     "homepage": "https://tablacus.github.io/explorer.html",
-    "hash": "6d411f7695e35991ee3d893e7b33e1223578954a519e85dc1ccd66a1c1dcb3ae",
+    "hash": "72eda92c50c40e5509247ba6d287b23c8853ea18a1dcd991ce42c589f31cea1b",
     "architecture": {
         "64bit": {
             "bin": [
@@ -46,18 +47,19 @@
             ]
         }
     },
-    "pre_install": [
-        "if((Test-Path(\"$env:TEMP\\__scoop__preserved\"))) { Write-Output \"[pre_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force }",
-        "Write-Output \"[pre_install] Creating temporary preserved folder\"; New-Item \"$env:TEMP\\__scoop__preserved\" -type directory | Out-Null",
-        "Write-Output \"[pre_install] Preserving original files\"; Copy-Item \"$dir\\*\" \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
-    ],
     "persist": [
         "config",
         "addons"
     ],
     "post_install": [
-        "Write-Output \"[post_install] Overwriting from original files\"; Copy-Item \"$env:TEMP\\__scoop__preserved\\*\" \"$dir\" -Recurse -Force",
-        "Write-Output \"[post_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
+        "function PersistDirUpdate([String] $folder) {",
+        "   if(test-path \"$dir\\$folder.original\") {",
+        "       Write-Output \"[post_install] Persist Overwriting from original files - $folder\"",
+        "       Copy-Item \"$dir\\$folder.original\\*\" \"$dir\\$folder\" -Recurse -Force",
+        "       Remove-Item \"$dir\\$folder.original\" -Recurse -Force",
+        "   }",
+        "}",
+        "PersistDirUpdate 'addons'"
     ],
     "checkver": {
         "url": "https://github.com/tablacus/TablacusExplorer/releases",
