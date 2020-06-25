@@ -17,6 +17,13 @@
         "}",
         "UpdateRelatedapp 'resource-hacker' 'ResourceHacker.JP'"
     ],
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$(appdir resource-hacker $global)\") {",
+            "   Remove-Item \"$(appdir resource-hacker $global)\\current\\ResourceHacker.JP\"",
+            "}"
+        ]
+    },
     "checkver": {
         "url": "https://j10n.net/entry/20100917/resourcehacker",
         "re": "Resource Hacker ([\\d.]+)"
