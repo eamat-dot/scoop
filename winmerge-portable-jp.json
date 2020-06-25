@@ -1,0 +1,98 @@
+{
+    "##":[
+        "WinMergePortable(PortableApps.com) を jpバイナリに差し替えて最新にする",
+        "起動初回に整合性エラー警告が表示されるが'Yes'を押すことで使えるようになる",
+        "paf.exeには無人オプションがないため直解凍しているがインストーラ通さなくても動作に支障はない…はず"
+    ],
+    "version": "2.16.6-jp-6",
+    "homepage": "https://winmergejp.bitbucket.io/",
+    "license": "GPL-2.0-only",
+    "suggest": {
+        "vcredist2008": "extras/vcredist2008"
+    },
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-2.16.6-jp-6-x64-exe.zip",
+                "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.6.paf.exe#/dl.7z"
+            ],
+            "hash": [
+                "ea34566337c3a6be0367bbd4b9ac2702ee396c8d279aed65464683b6efd94c62",
+                "db982d2901c2f850309ef425329aa8d398162f5ad0bebb86d5f0ad7b69b2a143"
+            ]
+        },
+        "32bit": {
+            "url": [
+                "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-2.16.6-jp-6-exe.zip",
+                "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.6.paf.exe#/dl.7z"
+            ],
+            "hash": [
+                "7e9a5e9b148e32c622ff71cacde252ce0c904ac6421ad4c0f502fa164eab9ece",
+                "db982d2901c2f850309ef425329aa8d398162f5ad0bebb86d5f0ad7b69b2a143"
+            ]
+        }
+    },
+    "bin": [
+        [
+            "WinMergePortable.exe",
+            "WinMerge"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "WinMergePortable.exe",
+            "WinMergePortable (日本語版)"
+        ]
+    ],
+    "pre_install": [
+        "function UpdatePortablePackage([String] $appname) {",
+        "   if($architecture -eq '64bit') {$folder = $appname + '64' } else { $folder = $appname }",
+        "   Write-Output \"[pre_install] $architecture ... $folder\"",
+        "   Move-Item \"$dir\\App\\$folder\" \"$dir\\App\\$folder.old\" -Force",
+        "   Move-Item \"$dir\\$appname\" \"$dir\\App\\$folder\"  -Force",
+        "}",
+        "function DisableSplash([String] $portableappname) {",
+        "   $portableini = \"$dir\\$portableappname.ini\"",
+        "   if(!(test-path \"$portableini\")) {",
+        "       Copy-Item \"$dir\\Other\\Source\\AppNamePortable.ini\" \"$portableini\"",
+        "       (Get-Content \"$portableini\").replace('DisableSplashScreen=false', 'DisableSplashScreen=true') | Set-Content \"$portableini\"",
+        "   }",
+        "}",
+        "UpdatePortablePackage 'WinMerge'",
+        "Remove-Item -LiteralPath \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "DisableSplash 'WinMergePortable'"
+    ],
+    "persist": [
+        "Data",
+        "App\\WinMerge\\MergePlugins",
+        "App\\WinMerge64\\MergePlugins"
+    ],
+    "post_install": [
+        "function PersistDirUpdate([String] $folder) {",
+        "   if(test-path \"$dir\\$folder.original\") {",
+        "       Write-Output \"[post_install] Persist Overwriting from original files - $folder\"",
+        "       Copy-Item \"$dir\\$folder.original\\*\" \"$dir\\$folder\" -Recurse -Force",
+        "       Remove-Item \"$dir\\$folder.original\" -Recurse -Force",
+        "   }",
+        "}",
+        "PersistDirUpdate 'App\\WinMerge\\MergePlugins'",
+        "PersistDirUpdate 'App\\WinMerge64\\MergePlugins'"
+    ],
+    "checkver": {
+        "re": "winmerge-([\\d\\.]+-jp-[\\d]+)-exe.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-$version-exe.zip"
+            },
+            "64bit": {
+                "url": "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-$version-x64-exe.zip"
+            }
+        }
+    },
+    "notes": [
+        "If WinMerge fails to start, you probably need to install the Microsoft Visual C++ 2008 Redistributable package:",
+        "https://www.microsoft.com/en-au/download/details.aspx?id=5582"
+    ]
+}
