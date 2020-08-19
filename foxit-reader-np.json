@@ -5,9 +5,9 @@
         "language folder persist"
     ],
     "homepage": "https://www.foxitsoftware.com/",
-    "version": "9.7.2.29539",
-    "url": "https://cdn01.foxitsoftware.com/product/reader/desktop/win/9.7.2/339E24316E3F0007FFA28C4FBBE3B3C1/FoxitReader972_enu_Setup_Prom.exe",
-    "hash": "md5:339e24316e3f0007ffa28c4fbbe3b3c1",
+    "version": ".01",
+    "url": "https://cdn01.foxitsoftware.com/product/reader/desktop/win/.01./4B42242A13B3799DAB0EF7074B7058BC/FoxitReader01_enu_Setup_Prom.exe",
+    "hash": "md5:4b42242a13b3799dab0ef7074b7058bc",
     "innosetup": true,
     "bin": "FoxitReader.exe",
     "shortcuts": [

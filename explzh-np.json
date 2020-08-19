@@ -6,16 +6,16 @@
         "アプデ時にアンインストーラが走って設定がクリアされる？"
     ],
     "homepage": "https://www.ponsoftware.com/",
-    "version": "8.12",
+    "version": "8.16",
     "license": "https://www.ponsoftware.com/archiver/regist.htm",
     "architecture": {
         "64bit": {
-            "url": "https://www.ponsoftware.com/archiver/explzh/explz812_x64.exe#/dl.7z",
-            "hash": "f769a47dde660dc308818ddf7958f1707c3f293559a9426e685df775466199bf"
+            "url": "https://www.ponsoftware.com/archiver/explzh/explz816_x64.exe#/dl.7z",
+            "hash": "e1cbdd2956a96a8e53147fcb88d143e7a7af6be56596da9452689ff263704fe2"
         },
         "32bit": {
-            "url": "https://www.ponsoftware.com/archiver/explzh/explz812.exe#/dl.7z",
-            "hash": "2fc77fcd7a613f2b7c994c739d85f59f99df8263f21a6ee0e1102706afe1d7ee"
+            "url": "https://www.ponsoftware.com/archiver/explzh/explz816.exe#/dl.7z",
+            "hash": "ab3de469ea5296e9612c93bfe2cf8471cd983a42988ac10f579208f29a96e5e7"
         }
     },
     "installer": {

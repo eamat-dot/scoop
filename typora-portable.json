@@ -2,8 +2,8 @@
     "##": [
         "This manifest derives from extras",
         "Add : pre_install / uninstaller :: Appdata/Roaming -> persist  Junction"
-    ],    
-    "version": "0.9.89",
+    ],
+    "version": "0.9.93",
     "description": "A decent markdown editor finally available on Windows",
     "homepage": "https://typora.io",
     "license": {
@@ -14,11 +14,11 @@
     "architecture": {
         "64bit": {
             "url": "https://typora.io/windows/typora-setup-x64.exe",
-            "hash": "865e60aa4fc2161b29a59b8f937555ced477b4c2da4ea72cb7853f74ca3f535c"
+            "hash": "128b261ec728156c05a259c4474b008e775fe9ada820b2e53fdacec413b3c749"
         },
         "32bit": {
             "url": "https://typora.io/windows/typora-setup-ia32.exe",
-            "hash": "33f6c95ef600e0c7c3b72a6792d83aaa9207a24fb1fa35543e65c833ac86e92a"
+            "hash": "6a9e4426fb85df0f2e0f1134c337b134f00dbb8661af433c4f5b458d91a5db18"
         }
     },
     "innosetup": true,
