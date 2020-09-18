@@ -1,9 +1,9 @@
 {
-    "version": "2.16.6",
+    "version": "2.16.8",
     "homepage": "http://winmerge.org",
     "license": "GPL-2.0-only",
-    "url": "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.6.paf.exe#/dl.7z",
-    "hash": "db982d2901c2f850309ef425329aa8d398162f5ad0bebb86d5f0ad7b69b2a143",
+    "url": "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.8.paf.exe#/dl.7z",
+    "hash": "2843ffa49385d104eef52f442ce295f80525e0c833277d0b8d5f99924b19bb15",
     "bin": [
         [
             "WinMergePortable.exe",
@@ -35,7 +35,7 @@
     "post_install": [
         "function PersistDirUpdate([String] $folder) {",
         "   if(test-path \"$dir\\$folder.original\") {",
-        "       Write-Output \"[post_install] Persist Overwriting from original files - $folder\"", 
+        "       Write-Output \"[post_install] Persist Overwriting from original files - $folder\"",
         "       Copy-Item \"$dir\\$folder.original\\*\" \"$dir\\$folder\" -Recurse -Force",
         "       Remove-Item \"$dir\\$folder.original\" -Recurse -Force",
         "   }",
