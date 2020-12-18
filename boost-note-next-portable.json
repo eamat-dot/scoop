@@ -2,9 +2,9 @@
     "homepage": "https://boostnote.io/",
     "description": "An intuitive and stylish markdown note app for the developers.",
     "license": "GPL-3.0-or-later",
-    "version": "0.10.2",
+    "version": "0.11.6",
     "url": "https://github.com/BoostIO/BoostNote.next/releases/latest/download/boost-note-win.exe#/dl.7z",
-    "hash": "1c6309e710803c3ecce5226bf86571cbeb6653f55bcf55ee1515db66870be0c7",
+    "hash": "276f014cc48d3c6cbfb83988fc2c5f76ae76e920ad7eabad838ece7ff1f7ff59",
     "architecture": {
         "64bit": {
             "installer": {
