@@ -1,10 +1,10 @@
 {
-    "##":[
+    "##": [
         "WinMergePortable(PortableApps.com) を jpバイナリに差し替えて最新にする",
         "起動初回に整合性エラー警告が表示されるが'Yes'を押すことで使えるようになる",
         "paf.exeには無人オプションがないため直解凍しているがインストーラ通さなくても動作に支障はない…はず"
     ],
-    "version": "2.16.6-jp-6",
+    "version": "2.16.8-jp-11",
     "homepage": "https://winmergejp.bitbucket.io/",
     "license": "GPL-2.0-only",
     "suggest": {
@@ -13,21 +13,21 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-2.16.6-jp-6-x64-exe.zip",
+                "https://osdn.net/dl/winmerge-jp/winmerge-2.16.8-jp-11-x64-exe.zip",
                 "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.6.paf.exe#/dl.7z"
             ],
             "hash": [
-                "ea34566337c3a6be0367bbd4b9ac2702ee396c8d279aed65464683b6efd94c62",
+                "4e3a425e026aa73c578fc870259a07b50caeba2f251e21f3e433b287fee9a534",
                 "db982d2901c2f850309ef425329aa8d398162f5ad0bebb86d5f0ad7b69b2a143"
             ]
         },
         "32bit": {
             "url": [
-                "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-2.16.6-jp-6-exe.zip",
+                "https://osdn.net/dl/winmerge-jp/winmerge-2.16.8-jp-11-exe.zip",
                 "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.6.paf.exe#/dl.7z"
             ],
             "hash": [
-                "7e9a5e9b148e32c622ff71cacde252ce0c904ac6421ad4c0f502fa164eab9ece",
+                "e67e8e9b531a851b8937b8cf52f29ca2c466b9f966520cbf00b49db56ae5d11b",
                 "db982d2901c2f850309ef425329aa8d398162f5ad0bebb86d5f0ad7b69b2a143"
             ]
         }
@@ -84,10 +84,10 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-$version-exe.zip"
+                "url": "https://osdn.net/dl/winmerge-jp/winmerge-$version-exe.zip"
             },
             "64bit": {
-                "url": "https://ymu.dl.osdn.jp/winmerge-jp/73072/winmerge-$version-x64-exe.zip"
+                "url": "https://osdn.net/dl/winmerge-jp/winmerge-$version-x64-exe.zip"
             }
         }
     },
