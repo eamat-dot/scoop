@@ -1,0 +1,40 @@
+{
+    "##": [
+        "This manifest derives from extras",
+        "non portable",
+        "language folder persist"
+    ],
+    "homepage": "https://www.foxitsoftware.com/",
+    "version": ".01",
+    "url": "https://cdn01.foxitsoftware.com/product/reader/desktop/win/.01./4B42242A13B3799DAB0EF7074B7058BC/FoxitReader01_enu_Setup_Prom.exe",
+    "hash": "md5:4b42242a13b3799dab0ef7074b7058bc",
+    "innosetup": true,
+    "bin": "FoxitReader.exe",
+    "shortcuts": [
+        [
+            "FoxitReader.exe",
+            "PDF\\Foxit Reader"
+        ]
+    ],
+    "persist": "lang",
+    "pre_install": [
+        "function CreateFolder([String] $folder) {",
+        "    if(!(Test-Path \"$persist_dir\\$folder\")) {",
+        "        Write-Host \"Create folders for : $folder\"",
+        "        New-Item -Force -Path \"$persist_dir\\$folder\" -ItemType Directory | Out-Null",
+        "    }",
+        "}",
+        "CreateFolder 'lang'"
+    ],
+    "checkver": {
+        "url": "https://www.foxitsoftware.com/downloads/downloadForm.php?retJson=1&product=Foxit-Reader&platform=Windows&language=English",
+        "regex": "([\\d.]+).*(?<md5hash>([a-fA-F0-9]{32}))"
+    },
+    "autoupdate": {
+        "url": "https://cdn01.foxitsoftware.com/product/reader/desktop/win/$majorVersion.$minorVersion.$patchVersion/$matchMd5hash/FoxitReader$majorVersion$minorVersion$patchVersion_enu_Setup_Prom.exe",
+        "hash": {
+            "url": "https://www.foxitsoftware.com/downloads/downloadForm.php?retJson=1&product=Foxit-Reader&platform=Windows&language=English",
+            "regex": "$md5"
+        }
+    }
+}
