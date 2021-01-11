@@ -13,22 +13,22 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://osdn.net/dl/winmerge-jp/winmerge-2.16.8-jp-11-x64-exe.zip",
-                "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.6.paf.exe#/dl.7z"
+                "https://jaist.dl.osdn.jp/winmerge-jp/74150/winmerge-2.16.8-jp-11-x64-exe.zip",
+                "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.8.paf.exe#/dl.7z"
             ],
             "hash": [
-                "4e3a425e026aa73c578fc870259a07b50caeba2f251e21f3e433b287fee9a534",
-                "db982d2901c2f850309ef425329aa8d398162f5ad0bebb86d5f0ad7b69b2a143"
+                "43b039740a1b6ded44e002b8ec6fa1961a38fad550cea08280f0faabad864b53",
+                "2843ffa49385d104eef52f442ce295f80525e0c833277d0b8d5f99924b19bb15"
             ]
         },
         "32bit": {
             "url": [
-                "https://osdn.net/dl/winmerge-jp/winmerge-2.16.8-jp-11-exe.zip",
-                "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.6.paf.exe#/dl.7z"
+                "https://jaist.dl.osdn.jp/winmerge-jp/74150/winmerge-2.16.8-jp-11-exe.zip",
+                "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.8.paf.exe#/dl.7z"
             ],
             "hash": [
-                "e67e8e9b531a851b8937b8cf52f29ca2c466b9f966520cbf00b49db56ae5d11b",
-                "db982d2901c2f850309ef425329aa8d398162f5ad0bebb86d5f0ad7b69b2a143"
+                "dcc2463c24d315cba72e98783610fc6ae73cba86c9aadcb80b3c19e2941f0193",
+                "2843ffa49385d104eef52f442ce295f80525e0c833277d0b8d5f99924b19bb15"
             ]
         }
     },
@@ -84,10 +84,10 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://osdn.net/dl/winmerge-jp/winmerge-$version-exe.zip"
+                "url": "https://jaist.dl.osdn.jp/winmerge-jp/74150/winmerge-$version-exe.zip"
             },
             "64bit": {
-                "url": "https://osdn.net/dl/winmerge-jp/winmerge-$version-x64-exe.zip"
+                "url": "https://jaist.dl.osdn.jp/winmerge-jp/74150/winmerge-$version-x64-exe.zip"
             }
         }
     },
