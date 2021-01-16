@@ -3,15 +3,15 @@
     "homepage": "https://www.rarlab.com/",
     "license": "Shareware",
     "description": "Powerful archive manager.",
-    "version": "5.91",
+    "version": "6.00",
     "architecture": {
         "64bit": {
-            "url": "https://www.rarlab.com/rar/winrar-x64-591jp.exe#/setup.7z",
-            "hash": "a01c9b52da7eea5ca774371bf1be11db0f857c724e11f41197d201051feb3036"
+            "url": "https://www.rarlab.com/rar/winrar-x64-600jp.exe#/setup.7z",
+            "hash": "7d2ed4fa389b1ce35dd17e98e936d44a6a1039f963a15c36ad9d608920d95430"
         },
         "32bit": {
-            "url": "https://www.rarlab.com/rar/wrar591jp.exe#/setup.7z",
-            "hash": "92873ba18724d23afda99ccd1f8995f6d10ada9d8ac279daa9f2e0c4942ab9d2"
+            "url": "https://www.rarlab.com/rar/wrar600jp.exe#/setup.7z",
+            "hash": "00db4a47a1b3c83588fa58f9b6129eed6615ab19e8a574eb7c40f60d7ed88d0a"
         }
     },
     "bin": [
