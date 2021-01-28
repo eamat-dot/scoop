@@ -5,11 +5,11 @@
         "64bitではx86とx64両方ショートカットを作るように変更(susie pluginの関係で32bitを利用する場合もあるため)",
         "Change the method of updating the addons"
     ],
-    "version": "21.1.14",
+    "version": "21.1.27",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/21.1.14/te210114.zip",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/21.1.27/te210127.zip",
     "homepage": "https://tablacus.github.io/explorer.html",
-    "hash": "6100088e6fda66974f93b90c55419f10e68587e8b39caa342b10c4bb08e3f06a",
+    "hash": "8ac77b01f526de59953096f0adc2a000f6a2d7fcf0ef1db0bbfbb24550e25cb6",
     "architecture": {
         "64bit": {
             "bin": [
@@ -49,7 +49,9 @@
     },
     "persist": [
         "config",
-        "addons"
+        "addons",
+        "icons",
+        "lib"
     ],
     "post_install": [
         "function PersistDirUpdate([String] $folder) {",
