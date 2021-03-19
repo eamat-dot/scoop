@@ -1,3 +1,4 @@
 # my scoop-bucket
 
-個人用超暫定カスタム
+個人用暫定版
+Forever preliminary version
