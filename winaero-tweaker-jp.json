@@ -6,10 +6,10 @@
     ],
     "homepage": "https://donkichirou.okoshi-yasu.net/index.html",
     "description": "Japanease Lang patches",
-    "version": "0.19.1.0",
+    "version": "1.20.0.0",
     "depends": "winaero-tweaker",
-    "url": "http://www7b.biglobe.ne.jp/~donkichirou/Lang/WinaeroTweaker_0_19_1_0_jp.zip",
-    "hash": "3c2b766572fbe5cc15fc9f9399babf5360a93c09247ab8ed2225965d469903e9",
+    "url": "http://www7b.biglobe.ne.jp/~donkichirou/Lang/WinaeroTweaker_1_20_0_0_jp.zip",
+    "hash": "139e096c52637809b81717e268e3548bd17960e3c64dc4e1430c7df425c82897",
     "pre_install": [
         "function UpdateRelatedapp([String] $dest, [String] $file) {",
         "   $destdir = \"$(appdir $dest $global)\\current\"",
