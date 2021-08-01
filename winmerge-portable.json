@@ -1,9 +1,9 @@
 {
-    "version": "2.16.12",
+    "version": "2.16.14",
     "homepage": "http://winmerge.org",
     "license": "GPL-2.0-only",
-    "url": "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.12.paf.exe#/dl.7z",
-    "hash": "a460b64d171d35f815846a8426054b2f574c60eb6ac8fcd802dd037f09ef450e",
+    "url": "https://download3.portableapps.com/portableapps/WinMergePortable/WinMergePortable_2.16.14.paf.exe#/dl.7z",
+    "hash": "d521c663105754cf6469d3a983fcf28fb26b1cbaa6aa24b7114d34030be766af",
     "bin": [
         [
             "WinMergePortable.exe",
