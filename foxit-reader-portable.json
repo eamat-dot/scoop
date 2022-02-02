@@ -1,13 +1,13 @@
 {
-    "version": "11.1.0",
+    "version": "11.2.1",
     "description": "PDF Reader",
     "homepage": "https://www.foxitsoftware.com/",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.foxitsoftware.com/pdf-reader/eula.html"
     },
-    "url": "https://download3.portableapps.com/portableapps/FoxitReaderPortable/FoxitReaderPortable_11.1.0.paf.exe?20190321#/dl.7z",
-    "hash": "8ca241a1144c2130c2f12ff12d92d1ae251f31032ebbe9f89b71a3884a16de66",
+    "url": "https://download3.portableapps.com/portableapps/FoxitReaderPortable/FoxitReaderPortable_11.2.1.paf.exe?20190321#/dl.7z",
+    "hash": "8112a4d85012ab7aed1bde6657331b300fc11ec23ae843294f3b2d41f0c681a1",
     "bin": [
         [
             "FoxitReaderPortable.exe",
