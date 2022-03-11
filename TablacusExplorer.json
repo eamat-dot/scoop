@@ -5,11 +5,11 @@
         "64bitではx86とx64両方ショートカットを作るように変更(susie pluginの関係で32bitを利用する場合もあるため)",
         "Change the method of updating the addons"
     ],
-    "version": "22.2.1",
+    "version": "22.3.7",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/22.2.1/te220201.zip",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/22.3.7/te220307.zip",
     "homepage": "https://tablacus.github.io/explorer.html",
-    "hash": "4d4ae5c9768d3fb7e58afc86777184e1a4a7ef101cbdcc3c3878cc79d73001fb",
+    "hash": "2da626e70ffb64e2f1773af508d3aeaf7f38de4f244d9a95a56eef015acc4c66",
     "architecture": {
         "64bit": {
             "bin": [
