@@ -1,15 +1,15 @@
 {
     "homepage": "https://www.slimjet.com/",
     "description": "FASTEST WEB BROWSER THAT AUTOMATICALLY BLOCKS ADS",
-    "version": "35.0.2.0",
+    "version": "36.0.4.0",
     "architecture": {
         "64bit": {
             "url": "https://www.slimjetbrowser.com/release/sjt7z_x64.exe#/dl.7z",
-            "hash": "f03b80ab82f3e10e7a9d04df853d5a1ac75844ea842b8317539979b8e12d49a9"
+            "hash": "fd75b9a2b23e2100ae4130bd064f0acb94590b653e8eb8115413c40003bed6cd"
         },
         "32bit": {
             "url": "https://www.slimjetbrowser.com/release/sjt7z_x86.exe#/dl.7z",
-            "hash": "0288060387bc8a27b79b4570af1f0879d40f390584725b01aced97b85436cf99"
+            "hash": "fae1ba4164b340173ef9c4268bb483391d460d655bed9d277d81b2b0aab2c2f8"
         }
     },
     "extract_dir": "Slimjet",
