@@ -3,15 +3,15 @@
     "homepage": "https://www.rarlab.com/",
     "license": "Shareware",
     "description": "Powerful archive manager.",
-    "version": "6.02",
+    "version": "6.24",
     "architecture": {
         "64bit": {
-            "url": "https://www.rarlab.com/rar/winrar-x64-602jp.exe#/setup.7z",
-            "hash": "b1291b72dd9e836cce28aa729adc7c2fa6828b8e9816a7110a560a51f24412e4"
+            "url": "https://www.rarlab.com/rar/winrar-x64-624jp.exe#/setup.7z",
+            "hash": "948b2aced8dcf664c6a321c0908408b5e3e0ebbef87eb84c69cc4bfd6186058d"
         },
         "32bit": {
-            "url": "https://www.rarlab.com/rar/wrar602jp.exe#/setup.7z",
-            "hash": "c489892a2b0844e085020e3ae9deb881643566ac2b3a06074a6f80ac0ef3fc11"
+            "url": "https://www.rarlab.com/rar/winrar-x32-624jp.exe#/setup.7z",
+            "hash": "43345d46ab63d1f16134e65e1192d8cfb17eaeaffa1a233b145e79d7ca7f36b5"
         }
     },
     "bin": [
@@ -40,18 +40,16 @@
         "CreateFile 'rarreg.key'"
     ],
     "checkver": {
-        "url": "https://www.rarlab.com",
-        "re": "WinRAR and RAR ([\\d.]+) release"
+        "url": "https://www.rarlab.com/download.htm",
+        "re": "Japanese \\(64 bit\\)<\\/b><\\/a><\\/td>\\s*<td align=\"center\">([\\d.]+)<\\/td>"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "##": "https://www.rarlab.com/rar/winrar-x64-$cleanVersion.exe#/setup.7z",
                 "url": "https://www.rarlab.com/rar/winrar-x64-$cleanVersionjp.exe#/setup.7z"
             },
             "32bit": {
-                "##": "https://www.rarlab.com/rar/wrar$cleanVersion.exe#/setup.7z",
-                "url": "https://www.rarlab.com/rar/wrar$cleanVersionjp.exe#/setup.7z"
+                "url": "https://www.rarlab.com/rar/winrar-x32-$cleanVersionjp.exe#/setup.7z"
             }
         }
     }
