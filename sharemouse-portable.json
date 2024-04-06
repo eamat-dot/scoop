@@ -5,7 +5,12 @@
     "version": "6.0.59",
     "url": "https://www.sharemouse.com/ShareMouse_USB.zip",
     "hash": "",
-    "bin": "sharemouse.exe",
+    "shortcuts": [
+        [
+            "sharemouse.exe",
+            "ShareMouse"
+        ]
+    ],
     "checkver": {
         "url": "https://www.sharemouse.com/download/",
         "re": "Windows Version:<\\/strong> <a href='\\/download\\/changelog\\/'>([\\d.]+)"
