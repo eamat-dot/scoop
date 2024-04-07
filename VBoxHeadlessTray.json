@@ -1,37 +1,30 @@
 {
     "##": [
         "'VBoxHeadlessTray,2.exe' is AMD64",
-        "'VBoxHeadlessTray,1.exe' is I386",
-        "unpack_inno の 'VBoxHeadlessTray??Setup.exe' は毎回書換が必要な模様"
+        "'VBoxHeadlessTray,1.exe' is I386"
     ],
     "homepage": "https://www.toptensoftware.com/vboxheadlesstray/",
+    "licence": "Creative Commons Attribution-Noncommercial-Share Alike 2.5 Australia License",
     "description": "VBoxHeadlessTray is simple Windows app that runs a VirtualBox VM as a tray icon",
-    "version": "6.1.0",
-    "innosetup": false,
+    "version": "700",
+    "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray700Setup.exe#/dl.7z",
+    "hash": "951eb75b99b5828be6c87b6124635e925a6d887ad33140794801e2ba616d9700",
+    "bin": "VBoxHeadlessTray.exe",
+    "innosetup": true,
     "architecture": {
         "64bit": {
-            "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray610Setup.exe",
-            "hash": "15e51022824e57ae2109b761f6e4fed6e7e66feb86dd03d76a4959f396c6fd24",
             "pre_install": [
-                "$manifest.innosetup = $true",
-                "unpack_inno \"VBoxHeadlessTray52Setup.exe\" $manifest $dir",
                 "rename-item \"$dir\\VBoxHeadlessTray,2.exe\" \"$dir\\VBoxHeadlessTray.exe\"",
                 "remove-item \"$dir\\VBoxHeadlessTray,*.exe\""
             ]
         },
         "32bit": {
-            "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray610Setup.exe",
-            "hash": "15e51022824e57ae2109b761f6e4fed6e7e66feb86dd03d76a4959f396c6fd24",
             "pre_install": [
-                "$manifest.innosetup = $true",
-                "unpack_inno \"VBoxHeadlessTray52Setup.exe\" $manifest $dir",
                 "rename-item \"$dir\\VBoxHeadlessTray,1.exe\" \"$dir\\VBoxHeadlessTray.exe\"",
                 "remove-item \"$dir\\VBoxHeadlessTray,*.exe\""
             ]
         }
     },
-    "depends": "innounp",
-    "bin": "VBoxHeadlessTray.exe",
     "shortcuts": [
         [
             "VBoxHeadlessTray.exe",
@@ -40,16 +33,9 @@
     ],
     "checkver": {
         "url": "https://www.toptensoftware.com/vboxheadlesstray/",
-        "re": "for VirtualBox ([\\d.]+)"
+        "re": "VBoxHeadlessTray([\\d.]+)Setup.exe"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray$cleanVersionSetup.exe"
-            },
-            "32bit": {
-                "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray$cleanVersionSetup.exe"
-            }
-        }
+        "url": "http://www.toptensoftware.com/downloads/VBoxHeadlessTray$cleanVersionSetup.exe#/dl.7z"
     }
 }
