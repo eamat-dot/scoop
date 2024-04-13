@@ -1,6 +1,6 @@
 {
     "##": "開発は終了しているが時折マイナー更新がある模様",
-    "homepage": "https://www.tracker-software.com/product/pdf-xchange-viewer",
+    "homepage": "https://www.pdf-xchange.com/product/downloads/discontinued",
     "description": "The smallest, fastest, most feature-rich PDF reader/viewer available",
     "version": "2.5.322.10",
     "url": "http://downloads.pdf-xchange.com/PDFX_Vwr_Port.zip",
@@ -24,8 +24,8 @@
         "CreateFile 'Settings.dat'"
     ],
     "checkver": {
-        "url": "https://www.tracker-software.com/product/pdf-xchange-viewer",
-        "re": "<strong>Current version:</strong> ([\\d.]+)"
+        "url": "https://www.pdf-xchange.com/product/downloads/discontinued",
+        "re": "<span class=\"versionname\"><strong>([\\d.]+)"
     },
     "autoupdate": {
         "url": "http://downloads.pdf-xchange.com/PDFX_Vwr_Port.zip"
